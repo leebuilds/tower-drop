@@ -13,6 +13,8 @@ This plan assumes **Godot 4.x** (GDScript). Adjust versions if you standardize o
 
 **Exit criteria:** Empty scene runs on desktop; export presets exist for Windows/macOS/Linux and Android/iOS (placeholders OK).
 
+**Status in this repo:** Phase 0 is implemented under `game/` (`project.godot`, `scenes/main.tscn`, input actions, `TouchBridge` autoload per game-design touch halves, `export_presets.cfg` placeholders).
+
 ## Phase 1 — Vertical slice (no polish)
 
 ### Player

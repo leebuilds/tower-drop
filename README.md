@@ -16,18 +16,26 @@ All product intent—loop, controls, hazards, power-ups, difficulty, art bar, pl
 | [`docs/godot-implementation-plan.md`](docs/godot-implementation-plan.md) | Phased Godot build plan |
 | [`docs/publishing-roadmap.md`](docs/publishing-roadmap.md) | Release and store checklist |
 
-## Repo layout (target)
+## Run the game (Phase 0)
 
-Godot project files are not committed yet. Planned layout:
+1. Install [Godot 4.5+](https://godotengine.org/download) (project targets **4.5**).
+2. In Godot: **Import** → choose [`game/project.godot`](game/project.godot) (or open the `game` folder as the project root).
+3. Press **F5** (main scene: `game/scenes/main.tscn`).
 
-- `docs/` — design and planning (see above)
-- `game/` *(optional)* — `project.godot`, `scenes/`, `scripts/`, `assets/` per [`docs/godot-implementation-plan.md`](docs/godot-implementation-plan.md) Phase 0
+**Controls (see game-design):** `move_left` / `move_right` — arrow keys and **A** / **D**; **touch** left/right half of the screen is wired via autoload `TouchBridge`. `ui_accept` — **Space** / **Enter** (for future restart menus).
 
-Create the Godot project in the editor (**Project → Project Settings**) in `game/` or the repo root, then open this folder in Godot.
+**Regenerate input map** (if you edit actions in a fresh clone):
 
-## Requirements
+```bash
+godot --headless --path game --script res://scripts/bootstrap_phase0.gd
+```
 
-- [Godot 4.x](https://godotengine.org/download) (GDScript)
+**Exports:** [`game/export_presets.cfg`](game/export_presets.cfg) lists Linux, Windows, macOS, Android, and iOS placeholders. Install export templates (**Editor → Manage Export Templates**), then open **Project → Export** to validate signing IDs, icons, and paths before shipping.
+
+## Repo layout
+
+- `docs/` — design and planning
+- `game/` — Godot project (`project.godot`, `scenes/`, `scripts/`, `assets/`, `autoload/`)
 
 ## License
 
