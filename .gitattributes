@@ -1,0 +1,17 @@
+# Normalize text line endings
+* text=auto eol=lf
+
+# Godot assets that must stay binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
+*.glb binary
+*.blend binary

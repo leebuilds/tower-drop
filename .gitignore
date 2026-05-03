@@ -1,0 +1,32 @@
+# Godot 4+ (https://docs.godotengine.org/en/stable/tutorials/best_practices/version_control.html)
+.godot/
+
+# Export artifacts (keep presets in repo if you want; builds stay local)
+export/
+*.pck
+*.exe
+*.x86_64
+*.app
+
+# Old Godot 3 cache (harmless if present)
+.import/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+*.swp
+*.swo
+*~
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
+
+# Python (scripts/tooling)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
