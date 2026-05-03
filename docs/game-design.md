@@ -70,3 +70,7 @@ Duration, stacking rules, and UI feedback (icon + timer) should be defined in im
 ## Note
 
 This should be a free game, just for experience.
+
+## Credit
+
+Design and project: **Harrison Lee** — [github.com/leebuilds](https://github.com/leebuilds)

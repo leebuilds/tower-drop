@@ -2,6 +2,8 @@
 
 Fast arcade game: fall down an endless tower, dodge traps, collect coins, and survive the rising crush. Built with **Godot 4**.
 
+**Author:** Harrison Lee — [github.com/leebuilds](https://github.com/leebuilds)
+
 ## Design (source of truth)
 
 All product intent—loop, controls, hazards, power-ups, difficulty, art bar, platforms, and scope—lives in **[`docs/game-design.md`](docs/game-design.md)**. When implementation or docs disagree, **update the code or the other doc to match `game-design.md`**.
